@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca Online</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animations.css">
+    <link rel="stylesheet" href="particles.css">
+</head>
+<body>
+    <div class="particles-container">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+    </div>
+    <header>
+        <div class="header-content">
+            <h1>Biblioteca Online</h1>
+            <p>Seu acesso ao conhecimento em qualquer lugar</p>
+            <nav class="nav-menu">
+                <a href="#catalogo">Catálogo</a>
+                <a href="#" id="sobreBtn">Sobre</a>
+                <a href="#" id="comprarBtn" class="comprar-btn">Comprar</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="catalog-section" id="catalogo">
+        <div class="container">
+            <h2 class="section-title">Catálogo de Livros</h2>
+            <div class="books-grid">
+                <!-- Livro 1 -->
+                <a href="metamorfose.html" class="book-card">
+                    <div class="book-cover">
+                        <img src="metamorfose.jpg" alt="A Metamorfose">
+                    </div>
+                    <div class="book-info">
+                        <h3>A Metamorfose</h3>
+                        <p class="author">Franz Kafka</p>
+                        <p class="description">Um dos mais importantes romances do século XX, narra a transformação de Gregor Samsa em um inseto.</p>
+                        <div class="book-meta">
+                            <span class="genre">Ficção</span>
+                            <span class="year">1915</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Livro 2 -->
+                <a href="dores.html" class="book-card">
+                    <div class="book-cover">
+                        <img src="dores.jpg" alt="Dores do Mundo">
+                    </div>
+                    <div class="book-info">
+                        <h3>Dores do Mundo</h3>
+                        <p class="author">Arthur Schopenhauer</p>
+                        <p class="description">Uma obra filosófica que explora a natureza do sofrimento humano e a busca pela felicidade.</p>
+                        <div class="book-meta">
+                            <span class="genre">Filosofia</span>
+                            <span class="year">1851</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Livro 3 -->
+                <a href="inferno.html" class="book-card">
+                    <div class="book-cover">
+                        <img src="inferno.jpg" alt="Inferno de Dante">
+                        <div class="badge mais-vendido">Mais Vendido</div>
+                    </div>
+                    <div class="book-info">
+                        <h3>Inferno de Dante</h3>
+                        <p class="author">Dante Alighieri</p>
+                        <p class="description">A primeira parte da Divina Comédia, uma jornada épica através dos nove círculos do inferno.</p>
+                        <div class="book-meta">
+                            <span class="genre">Poesia Épica</span>
+                            <span class="year">1320</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Livro 4 -->
+                <a href="sozinho.html" class="book-card">
+                    <div class="book-cover">
+                        <img src="sozinho.jpg" alt="Você Fica Tão Sozinho">
+                    </div>
+                    <div class="book-info">
+                        <h3>Você Fica Tão Sozinho</h3>
+                        <p class="author">Daniel Galera</p>
+                        <p class="description">Uma história contemporânea sobre solidão e conexões humanas na era digital.</p>
+                        <div class="book-meta">
+                            <span class="genre">Romance</span>
+                            <span class="year">2020</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Livro 5 -->
+                <a href="vento.html" class="book-card">
+                    <div class="book-cover">
+                        <img src="vento.jpg" alt="E o Vento Levou">
+                    </div>
+                    <div class="book-info">
+                        <h3>E o Vento Levou</h3>
+                        <p class="author">Margaret Mitchell</p>
+                        <p class="description">Um épico romance sobre a Guerra Civil Americana e a determinação de Scarlett O'Hara.</p>
+                        <div class="book-meta">
+                            <span class="genre">Romance Histórico</span>
+                            <span class="year">1936</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Livro 6 -->
+                <a href="zaratustra.html" class="book-card">
+                    <div class="book-cover">
+                        <img src="zaratustra.jpg" alt="Assim Falou Zaratustra">
+                    </div>
+                    <div class="book-info">
+                        <h3>Assim Falou Zaratustra</h3>
+                        <p class="author">Friedrich Nietzsche</p>
+                        <p class="description">Uma obra filosófica que apresenta as ideias do super-homem e a morte de Deus.</p>
+                        <div class="book-meta">
+                            <span class="genre">Filosofia</span>
+                            <span class="year">1883</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Livro 7 -->
+                <a href="amor.html" class="book-card">
+                    <div class="book-cover">
+                        <img src="amor.jpg" alt="Lado Feio do Amor">
+                    </div>
+                    <div class="book-info">
+                        <h3>Lado Feio do Amor</h3>
+                        <p class="author">Colleen Hoover</p>
+                        <p class="description">Uma história intensa sobre amor, obsessão e as consequências de nossas escolhas.</p>
+                        <div class="book-meta">
+                            <span class="genre">Romance</span>
+                            <span class="year">2016</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Livro 8 -->
+                <a href="crime.html" class="book-card">
+                    <div class="book-cover">
+                        <img src="crime.jpg" alt="Crime e Castigo">
+                    </div>
+                    <div class="book-info">
+                        <h3>Crime e Castigo</h3>
+                        <p class="author">Fiódor Dostoiévski</p>
+                        <p class="description">Um dos maiores romances psicológicos da literatura, explorando a culpa e a redenção.</p>
+                        <div class="book-meta">
+                            <span class="genre">Romance Psicológico</span>
+                            <span class="year">1866</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Modal -->
+    <div class="modal" id="sobreModal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <h2 class="modal-title">Sobre Nós</h2>
+            <div class="modal-text">
+                <div class="modal-header">
+                    <div class="modal-icon">📚</div>
+                    <p class="modal-intro">Bem-vindo à nossa Biblioteca Online! Somos especialistas em oferecer os livros mais exclusivos e interessantes em formato digital.</p>
+                </div>
+                <div class="modal-body">
+                    <p class="modal-mission">Nossa missão é proporcionar acesso a obras literárias de alta qualidade através de ebooks, com preços imbatíveis que cabem no seu bolso. Acreditamos que o conhecimento deve ser acessível a todos, e por isso trabalhamos constantemente para trazer as melhores obras com os melhores preços do mercado.</p>
+                    <div class="modal-features">
+                        <h3>Nossa Plataforma</h3>
+                        <ul>
+                            <li><span class="feature-icon">✨</span> Ebooks exclusivos e selecionados</li>
+                            <li><span class="feature-icon">💰</span> Preços imbatíveis e acessíveis</li>
+                            <li><span class="feature-icon">⚡</span> Acesso instantâneo após a compra</li>
+                            <li><span class="feature-icon">📱</span> Leitura em qualquer dispositivo</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de Compra -->
+    <div id="comprarModal" class="modal">
+        <div class="modal-content comprar-modal">
+            <span class="modal-close">&times;</span>
+            <h2 class="modal-title">Informações de Compra</h2>
+            <div class="modal-text">
+                <p class="double-click-info">Dê um duplo clique no botão "Comprar" para acessar a página de pagamento.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Código existente do modal e outros controles
+        let clickCount = 0;
+        let clickTimer = null;
+
+        // Get modal elements
+        const sobreModal = document.getElementById('sobreModal');
+        const comprarModal = document.getElementById('comprarModal');
+        const sobreBtn = document.getElementById('sobreBtn');
+        const comprarBtn = document.getElementById('comprarBtn');
+        const closeButtons = document.getElementsByClassName('modal-close');
+
+        // Open Sobre modal when clicking the Sobre link
+        sobreBtn.onclick = function(e) {
+            e.preventDefault();
+            sobreModal.classList.add('active');
+        }
+
+        // Função para abrir o modal de compra
+        function openComprarModal() {
+            comprarModal.style.display = 'flex';
+        }
+
+        // Função para fechar o modal de compra
+        function closeComprarModal() {
+            comprarModal.style.display = 'none';
+        }
+
+        // Event listeners para o modal de compra
+        comprarBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            clickCount++;
+            
+            if (clickCount === 1) {
+                clickTimer = setTimeout(function() {
+                    if (clickCount === 1) {
+                        openComprarModal();
+                    }
+                    clickCount = 0;
+                }, 500);
+            } else if (clickCount === 2) {
+                clearTimeout(clickTimer);
+                clickCount = 0;
+                window.location.href = 'pagamento.html';
+            }
+        });
+
+        // Close modals when clicking the X
+        Array.from(closeButtons).forEach(function(button) {
+            button.onclick = function() {
+                sobreModal.classList.remove('active');
+                closeComprarModal();
+            }
+        });
+
+        // Close modals when clicking outside
+        window.addEventListener('click', function(event) {
+            if (event.target == comprarModal) {
+                closeComprarModal();
+            }
+        });
+
+        // Adicionar animação de letras ao título
+        document.addEventListener('DOMContentLoaded', function() {
+            const title = document.querySelector('.header-content h1');
+            const text = title.textContent;
+            title.textContent = '';
+            
+            // Dividir o texto em palavras
+            const words = text.split(' ');
+            
+            // Criar spans para cada palavra
+            words.forEach((word, wordIndex) => {
+                // Criar um container para cada palavra
+                const wordContainer = document.createElement('span');
+                wordContainer.className = 'word-container';
+                wordContainer.style.display = 'inline-block';
+                wordContainer.style.marginRight = '10px'; // Espaço entre as palavras
+                
+                // Criar spans para cada letra da palavra
+                for (let i = 0; i < word.length; i++) {
+                    const span = document.createElement('span');
+                    span.textContent = word[i];
+                    span.style.animationDelay = `${(wordIndex * word.length + i) * 0.05}s`;
+                    wordContainer.appendChild(span);
+                }
+                
+                title.appendChild(wordContainer);
+            });
+            
+            // Adicionar suporte para toque em dispositivos móveis
+            let touchTimeout;
+            title.addEventListener('touchstart', function() {
+                this.classList.add('touched');
+                clearTimeout(touchTimeout);
+                
+                // Adicionar classe animating a todos os spans
+                const spans = this.querySelectorAll('span');
+                spans.forEach(span => {
+                    span.classList.add('animating');
+                });
+            });
+            
+            title.addEventListener('touchend', function() {
+                touchTimeout = setTimeout(() => {
+                    this.classList.remove('touched');
+                    
+                    // Remover classe animating após a animação terminar
+                    setTimeout(() => {
+                        const spans = this.querySelectorAll('span');
+                        spans.forEach(span => {
+                            span.classList.remove('animating');
+                        });
+                    }, 1000);
+                }, 1000);
+            });
+            
+            // Adicionar suporte para mouse
+            title.addEventListener('mouseenter', function() {
+                const spans = this.querySelectorAll('span');
+                spans.forEach(span => {
+                    span.classList.add('animating');
+                });
+            });
+            
+            title.addEventListener('mouseleave', function() {
+                // Não remover a classe animating imediatamente
+                // Ela será removida após a animação terminar
+                setTimeout(() => {
+                    const spans = this.querySelectorAll('span');
+                    spans.forEach(span => {
+                        span.classList.remove('animating');
+                    });
+                }, 1000);
+            });
+        });
+    </script>
+
+    <style>
+        .modal-content {
+            background: linear-gradient(135deg, #ffffff, #f8f9fa);
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+            max-width: 600px;
+            width: 90%;
+            position: relative;
+            border: 1px solid rgba(52, 152, 219, 0.1);
+        }
+
+        .modal-title {
+            color: #2c3e50;
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
+            font-weight: 700;
+            background: linear-gradient(45deg, #2c3e50, #3498db);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .modal-close {
+            position: absolute;
+            right: 1rem;
+            top: 1rem;
+            font-size: 1.5rem;
+            color: #2c3e50;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .modal-close:hover {
+            color: #3498db;
+            transform: scale(1.1);
+        }
+
+        .modal-header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .modal-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .modal-intro {
+            color: #2c3e50;
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+        }
+
+        .modal-body {
+            background: rgba(52, 152, 219, 0.05);
+            padding: 1.5rem;
+            border-radius: 10px;
+        }
+
+        .modal-mission {
+            color: #34495e;
+            line-height: 1.8;
+            margin-bottom: 2rem;
+        }
+
+        .modal-features h3 {
+            color: #2c3e50;
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        .modal-features ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .modal-features li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+            padding: 0.8rem;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+        }
+
+        .modal-features li:hover {
+            transform: translateX(5px);
+        }
+
+        .feature-icon {
+            font-size: 1.2rem;
+            margin-right: 1rem;
+            color: #3498db;
+        }
+
+        .modal-text {
+            color: #34495e;
+        }
+
+        /* Animação simples do título */
+        .header-content h1 {
+            color: #fff;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+            animation: titleGlow 2s ease-in-out infinite alternate;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            cursor: pointer;
+        }
+
+        .header-content h1 span {
+            display: inline-block;
+            transition: all 0.3s ease;
+        }
+
+        .header-content h1:hover span,
+        .header-content h1.touched span {
+            animation: subtleFloat 0.8s ease-in-out forwards;
+        }
+
+        .header-content h1 span.animating {
+            animation-play-state: running;
+        }
+
+        @keyframes titleGlow {
+            from {
+                text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+            }
+            to {
+                text-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+            }
+        }
+
+        @keyframes subtleFloat {
+            0% {
+                transform: translateY(0);
+                color: #fff;
+            }
+            50% {
+                transform: translateY(-5px);
+                color: #e0e0e0;
+            }
+            100% {
+                transform: translateY(0);
+                color: #fff;
+            }
+        }
+    </style>
+</body>
+</html> 

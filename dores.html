@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dores do Mundo - Biblioteca Online</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../animations.css">
+    <style>
+        .book-detail {
+            padding: 4rem 0;
+            position: relative;
+            z-index: 2;
+        }
+
+        .book-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            gap: 3rem;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 2rem;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .book-cover-large {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .book-details {
+            color: white;
+        }
+
+        .book-title {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .book-author {
+            font-size: 1.2rem;
+            color: #cccccc;
+            margin-bottom: 2rem;
+        }
+
+        .book-info-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .info-item {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 1rem;
+            border-radius: 8px;
+        }
+
+        .info-label {
+            font-size: 0.9rem;
+            color: #cccccc;
+            margin-bottom: 0.5rem;
+        }
+
+        .info-value {
+            font-size: 1.1rem;
+            color: white;
+        }
+
+        .book-description {
+            line-height: 1.6;
+            margin-bottom: 2rem;
+            color: #dddddd;
+        }
+
+        .back-button {
+            display: inline-block;
+            padding: 0.8rem 1.5rem;
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+            margin-bottom: 2rem;
+        }
+
+        .back-button:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateY(-2px);
+        }
+
+        @media (max-width: 768px) {
+            .book-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .book-cover-large {
+                max-width: 300px;
+                margin: 0 auto;
+            }
+        }
+    </style>
+</head>
+<body class="page-enter">
+    <header>
+        <div class="header-content">
+            <h1>Biblioteca Online</h1>
+            <p>Seu acesso ao conhecimento em qualquer lugar</p>
+            <nav class="nav-menu">
+                <a href="../index.html#inicio">Início</a>
+                <a href="../index.html#catalogo">Catálogo</a>
+                <a href="#" id="sobreBtn">Sobre</a>
+                <a href="https://pay.kiwify.com.br/AuGOXAe" target="_blank" class="comprar-btn">Comprar</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="book-detail">
+        <div class="container">
+            <a href="../index.html#catalogo" class="back-button">← Voltar ao Catálogo</a>
+            
+            <div class="book-container">
+                <div class="book-cover">
+                    <img src="../dores.jpg" alt="Dores do Mundo">
+                </div>
+                <div class="book-details">
+                    <h1>Dores do Mundo</h1>
+                    <p class="author">Arthur Schopenhauer</p>
+                    <div class="book-meta">
+                        <span class="genre">Filosofia</span>
+                        <span class="year">1851</span>
+                        <span class="pages">256 páginas</span>
+                        <span class="language">Alemão</span>
+                    </div>
+                    <div class="book-description">
+                        <p>Uma obra filosófica que explora a natureza do sofrimento humano e a busca pela felicidade.</p>
+                        <p>Schopenhauer apresenta sua visão pessimista sobre a existência humana e propõe caminhos para lidar com o sofrimento.</p>
+                        <p>Por que ler: Uma reflexão profunda sobre a natureza do sofrimento e as possibilidades de transcendência.</p>
+                    </div>
+                    <button class="comprar-btn" onclick="window.location.href='https://pay.kiwify.com.br/AuGOXAe'">Comprar</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Modal -->
+    <div class="modal" id="sobreModal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <h2 class="modal-title">Sobre Nós</h2>
+            <div class="modal-text">
+                <p>Bem-vindo à nossa Biblioteca Online! Somos uma plataforma dedicada a democratizar o acesso ao conhecimento.</p>
+                <br>
+                <p>Nossa missão é fornecer uma experiência de leitura excepcional, conectando leitores a milhares de títulos em diversos formatos. Acreditamos que o conhecimento deve ser acessível a todos, e por isso trabalhamos constantemente para expandir nosso acervo e melhorar nossos serviços.</p>
+                <br>
+                <p>Com uma interface moderna e intuitiva, nossa biblioteca oferece:</p>
+                <ul>
+                    <li>Ampla variedade de gêneros literários</li>
+                    <li>Recursos educacionais atualizados</li>
+                    <li>Ferramentas de pesquisa avançada</li>
+                    <li>Acesso 24/7 aos conteúdos</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Get modal elements
+        const modal = document.getElementById('sobreModal');
+        const btn = document.getElementById('sobreBtn');
+        const span = document.getElementsByClassName('modal-close')[0];
+
+        // Open modal when clicking the Sobre link
+        btn.onclick = function(e) {
+            e.preventDefault();
+            modal.classList.add('active');
+        }
+
+        // Close modal when clicking the X
+        span.onclick = function() {
+            modal.classList.remove('active');
+        }
+
+        // Close modal when clicking outside
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.classList.remove('active');
+            }
+        }
+    </script>
+</body>
+</html> 
